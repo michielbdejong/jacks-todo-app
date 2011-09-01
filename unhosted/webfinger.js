@@ -13,7 +13,6 @@ var Webfinger = function() {
 
 			$.ajax({
 				url: "http://"+domain+"/.well-known/host-meta",
-				cache: false,
 				dataType: "xml",
 				success: function(xml){
 					try {
@@ -63,7 +62,6 @@ var Webfinger = function() {
 		getHostMeta(userAddress, 'lrdd', onError, function(template) {
 			$.ajax({
 				url: template.replace(/{uri}/, "acct:"+userAddress, true),
-				cache: false,
 				dataType: "xml",
 				success: function(xml){
 					try {
