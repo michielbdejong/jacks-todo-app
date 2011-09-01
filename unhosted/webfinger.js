@@ -12,7 +12,7 @@ var Webfinger = function() {
 			var domain = parts[1];
 
 			$.ajax({
-				url: "http://"+domain+"/.well-known/host-meta",
+				url: "https://"+domain+"/.well-known/host-meta",
 				dataType: "xml",
 				success: function(xml){
 					try {

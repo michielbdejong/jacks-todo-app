@@ -17,8 +17,7 @@ var DAV = function() {
 	dav.get = function(userAddress, key, cb) {
 		var wallet = getWallet();
 		$.ajax({
-			url: keyToUrl(userAddress, key, wallet) + '?ts'+new Date ().getTime ()+'=0',
-			cache: false,
+			url: keyToUrl(userAddress, key, wallet),
 			dataType: "text",
 			success: function(text){
 				cb(text);
