@@ -130,7 +130,11 @@ var Unhosted = function() {
 				if(str == null) {
 					cb(null);
 				} else {
-					cb(JSON.parse(sjcl.decrypt(wallet.cryptoPwd, str)));
+					try {
+						cb(JSON.parse(sjcl.decrypt(wallet.cryptoPwd, str)));
+					} catch(e) {
+						cb(null);
+					}
 				}
 			});
 		}

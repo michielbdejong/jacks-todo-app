@@ -1,4 +1,4 @@
-var appBaseUrl = 'http://todo.jack-bowman.com';
+var appBaseUrl = 'http://todo.dev.unhosted.org';
 //var installationType = 'flower';
 
 var config = {
@@ -7,7 +7,8 @@ var config = {
 	loginUrl: appBaseUrl + '/unhosted/login.html',
 	//registerUrl: appBaseUrl + '/unhosted/register.html',
 	callbackUrl: appBaseUrl + '/unhosted/callback.html',
-	clientId: 'todo.jack-bowman.com',
+	importCallbackUrl: appBaseUrl + '/unhosted/import.html',
+	clientId: 'todo.dev.unhosted.org',
 	dataScope: 'jacktodoapp',
-	homeDomain: 'todo.jack-bowman.com'
+	homeDomain: 'todo.dev.unhosted.org'
 }

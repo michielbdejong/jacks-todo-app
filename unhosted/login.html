@@ -18,7 +18,7 @@ function takeMeIn(userAddress, haveAccount) {
 	if(haveAccount) {
 		Webfinger().getDavBaseUrl(userAddress, 0, 1, 
 			function() {
-				alert(userAddress+' does not seem to be a compatible with this app. Please obtain a compatible user address at for instance https://myfavouritesandwich.org and use that instead');
+				alert(userAddress+' does not seem to be compatible with this app. Please obtain a compatible user address at for instance myfavouritesandwich.org and use that instead');
 			},
 			function(davBaseUrl) {
 				setWallet({
